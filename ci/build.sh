@@ -2,10 +2,10 @@
 
 set -e
 
-VERSION=`cat web-version/number`
+VERSION=`cat version/number`
 
-pushd web-ui
+pushd web
   ./gradlew -PversionNumber=$VERSION clean assemble
 popd
 
-cp web-ui/build/libs/web-$VERSION.jar build/.
+cp web/build/libs/web-$VERSION.jar build/.
