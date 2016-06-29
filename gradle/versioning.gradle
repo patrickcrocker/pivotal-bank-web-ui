@@ -1,5 +1,12 @@
 // Sets version variable.
 
+if (project.hasProperty('versionNumber')) {
+  project.version = project.versionNumber
+} else {
+  project.version = '0.4.0'
+}
+
+/*
 version = new ProjectVersion()
 
 class ProjectVersion {
@@ -17,3 +24,4 @@ class ProjectVersion {
 		build
 	}
 }
+*/
