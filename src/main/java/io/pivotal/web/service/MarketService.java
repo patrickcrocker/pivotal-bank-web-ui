@@ -33,7 +33,6 @@ public class MarketService {
 	private static final Logger logger = LoggerFactory
 			.getLogger(MarketService.class);
 	@Autowired
-	@LoadBalanced
 	private RestTemplate restTemplate;
 
 

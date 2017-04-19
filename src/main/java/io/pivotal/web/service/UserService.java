@@ -22,7 +22,6 @@ public class UserService {
 			.getLogger(UserService.class);
 	
 	@Autowired
-	@LoadBalanced
 	private RestTemplate restTemplate;
 	
 	@Value("${pivotal.accountsService.name}")
